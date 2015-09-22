@@ -1,57 +1,846 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Playobject by September-9</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Playobject</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/September-9/playObject" class="btn">View on GitHub</a>
-      <a href="https://github.com/September-9/playObject/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/September-9/playObject/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bace.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+	<div class="playBox">
+		<div class="header">
+			<img src="images/header.png">
+		</div>
+		<div id="main">
+			<!-- 侧边栏 -->
+			<div id="slider">
+				<!-- 左侧用户相关信息 -->
+				<div class="user_search">
+					<div class="search">
+						<input type="text" class="inser"/>
+						<input type="button" class="inBtn">
+					</div>
+					<div class="user" id="user">
+						<ul class="user_title">
+							<li class="on"><a href="javascript:;">1傲视影音</a></li>
+							<li><a href="javascript:;">我的播放</a></li>
+							<li><a href="javascript;:">直播</a></li>
+							<li><a href="javascript;:">游戏</a></li>
+							<li><a href="javascript;:">用户</a></li>
+						</ul>
+						<div class="user_con">
+							<div class="user_face">
+								<img src="images/face.png">
+							</div>
+							<div class="user_msg">
+								<h3>September<a href="javascript;:"class="doudou">
+								</a></h3>
+								<p class="user_level">
+									<span class="lv0">
+										<img src="images/level.png">
+									</span>
+									<span class="level_sun">(0)</span>
+									<span class="level_yue">(1)</span>
+									<span class="level_xing">(2)</span>
+								</p>
+								<p class="user_help">
+									<span class="mycoin">我的硬币:
+										<a href="###">1000</a>
+									</span>
+									<span class="mychange">
+										<a href="###">我要兑换</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column" id="column_box">
+					<div class="rollBox" id="bar_box">
+						<div class="rollBarUp"></div>
+						<div class="rollBar" id="roll_bar"></div>
+						<div class="rollBarDown"></div>
+					</div>
+					<div class="movie_column" id="movie_box">
+						<div class="new_game">
+							<h3>今日有新游戏
+								<span>+</span>
+							</h3>
+						</div>
+						<!-- 第一组傲视影音 -->
+						<div class="movie_moreMsg" id="movie_more1">
+							<div class="movie_moreMsgColumn" id="movie_moreColumn1">
+								<ol>
+									<li class="active">傲视影院</li>
+									<li>热门游戏</li>
+									<li>购物优惠</li>
+								</ol>
+								<span>-</span>
+							</div>
+							<div id="movie_moreList1">
+								<ul class="movie_moreMsgList" style="display:block">
+									<li>[大陆] 青春荷尔蒙
+										<a href="###">
+											播放
+										</a>
+									</li>
+									<li class="odd">[欧美] 嘻哈三部曲之绝世高手
+										<a href="###">
+											播放
+										</a>
+									</li>
+									<li>[欧美] 嘻哈三部曲之绝世高手
+										<a href="###">
+											播放
+										</a></li>
+								</ul>
+								<ul class="movie_moreMsgList">
+									<li>[大陆] 青春荷尔蒙2
+										<a href="###">
+											播放
+										</a>
+									</li>
+									<li class="odd">[欧美] 嘻哈三部曲之绝世高手2
+										<a href="###">
+											播放
+										</a>
+									</li>
+									<li>[欧美] 嘻哈三部曲之绝世高手2
+										<a href="###">
+											播放
+										</a></li>
+								</ul>
+								<ul class="movie_moreMsgList">
+									<li>[大陆] 青春荷尔蒙33
+										<a href="###">
+											播放
+										</a>
+									</li>
+									<li class="odd">[欧美] 嘻哈三部曲之绝世高手33
+										<a href="###">
+											播放
+										</a>
+									</li>
+									<li>[欧美] 嘻哈三部曲之绝世高手33
+										<a href="###">
+											播放
+										</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 第二组同步剧场开始 -->
+						<div class="movie_moreMsg" id="movie_more2">
+							<div class="movie_moreMsgColumn">
+								<ol>
+									<li class="active">同步剧场</li>
+									<li>影院大片</li>
+									<li>热门综艺</li>
+								</ol>
+								<span>-</span>
+							</div>
+							<ul class="movie_moreMsgList" style="display:block">
+								<li>[历史] 赵氏孤儿案1 
+									<a href="###">
+										播放
+									</a>
+									<span>(<b>30</b>/40)</span>
+								</li>
+								<li class="odd">[伦理] 第22条婚规1 
+									<a href="###">
+										播放
+									</a>
+									<span>(<b>30</b>/40)</span>
+								</li>
+								<li>[爱情] 恋了爱了1
+									<a href="###">
+										播放
+									</a>
+									<span>(<b>30</b>/40)</span>
+								</li>
+							</ul>
+							<ul class="movie_moreMsgList">
+								<li>[历史] 赵氏孤儿案2
+									<a href="###">
+										播放
+									</a>
+									<span>(<b>30</b>/40)</span>
+								</li>
+								<li class="odd">[伦理] 第22条婚规2 
+									<a href="###">
+										播放
+									</a>
+									<span>(<b>30</b>/40)</span>
+								</li>
+								<li>[爱情] 恋了爱了2
+									<a href="###">
+										播放
+									</a>
+									<span>(<b>30</b>/40)</span>
+								</li>
+							</ul>
+							<ul class="movie_moreMsgList">
+								<li>[历史] 赵氏孤儿案3 
+									<a href="###">
+										播放
+									</a>
+									<span>(<b>30</b>/40)</span>
+								</li>
+								<li class="odd">[伦理] 第22条婚规3
+									<a href="###">
+										播放
+									</a>
+									<span>(<b>30</b>/40)</span>
+								</li>
+								<li>[爱情] 恋了爱了3
+									<a href="###">
+										播放
+									</a>
+									<span>(<b>30</b>/40)</span>
+								</li>
+							</ul>
+						</div>
+						<div class="movie_tb">
+							<h3>同步卫视，100部剧场等着你
+								<span></span>
+							</h3>
+						</div>
+						<!-- 第三组视频库开始 -->
+						<div class="movie_moreMsg" id="movie_more3">
+							<div class="movie_moreMsgColumn">
+								<h3>视频库</h3>
+								<ol>
+									<li class="active">电视剧</li>
+									<li>电影</li>
+									<li>动漫</li>
+									<li>综艺</li>
+								</ol>
+								<span>-</span>
+							</div>
+							<ul class="movie_moreMsgList" style="display:block">
+								<li>
+									<em>+</em>
+									内地剧场1
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+								<li class="odd">
+									<em>+</em>
+									港台剧场1
+									<span>(<b class="yellow">123</b>部)</span>
+								</li>
+								<li>
+									<em>+</em>
+									韩剧剧场1
+									<span>(<b class="yellow">456</b>部)</span>
+								</li>
+								<li class="odd">
+									<em>+</em>
+									欧美剧场1
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+								<li>
+									<em>+</em>
+									其他剧场1
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+							</ul>
+							<ul class="movie_moreMsgList">
+								<li>
+									<em>+</em>
+									内地剧场22
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+								<li class="odd">
+									<em>+</em>
+									港台剧场22
+									<span>(<b class="yellow">123</b>部)</span>
+								</li>
+								<li>
+									<em>+</em>
+									韩剧剧场22
+									<span>(<b class="yellow">456</b>部)</span>
+								</li>
+								<li class="odd">
+									<em>+</em>
+									欧美剧场22
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+								<li>
+									<em>+</em>
+									其他剧场22
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+							</ul>
+							<ul class="movie_moreMsgList">
+								<li>
+									<em>+</em>
+									内地剧场333
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+								<li class="odd">
+									<em>+</em>
+									港台剧场333
+									<span>(<b class="yellow">123</b>部)</span>
+								</li>
+								<li>
+									<em>+</em>
+									韩剧剧场333
+									<span>(<b class="yellow">456</b>部)</span>
+								</li>
+								<li class="odd">
+									<em>+</em>
+									欧美剧场333
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+								<li>
+									<em>+</em>
+									其他剧场333
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+							</ul>
+							<ul class="movie_moreMsgList">
+								<li>
+									<em>+</em>
+									内地剧场4444
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+								<li class="odd">
+									<em>+</em>
+									港台剧场4444
+									<span>(<b class="yellow">123</b>部)</span>
+								</li>
+								<li>
+									<em>+</em>
+									韩剧剧场4444
+									<span>(<b class="yellow">456</b>部)</span>
+								</li>
+								<li class="odd">
+									<em>+</em>
+									欧美剧场4444
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+								<li>
+									<em>+</em>
+									其他剧场4444
+									<span>(<b class="yellow">2023</b>部)</span>
+								</li>
+							</ul>
+						</div>
+						<!-- 第四组排行榜开始 -->
+						<div class="movie_moreMsg" id="movie_more4">
+							<div class="movie_moreMsgColumn">
+								<h3>视频库</h3>
+								<ol>
+									<li class="active">电视剧</li>
+									<li>电影</li>
+									<li>动漫</li>
+									<li>综艺</li>
+								</ol>
+								<span>-</span>
+							</div>
+							<div id="videoGallery">
+								<ul class="movie_moreMsgList clearfix" style="display:block">
+									<li class="active">
+										<div class="movie_rankone">
+											<b>1</b>箭在弦上1
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>1</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>2</b>恋了爱了1
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>2</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>3</b>娘要嫁人1
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>3</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>4</b>爱情自有天意1
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>4</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>5</b>爱情自有天意1
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>5</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+								</ul>
+								<ul class="movie_moreMsgList clearfix" style="display:block">
+									<li class="active">
+										<div class="movie_rankone">
+											<b>1</b>箭在弦上2
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>1</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>2</b>恋了爱了2
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>2</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>3</b>娘要嫁人2
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>3</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>4</b>爱情自有天意2
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>4</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>5</b>爱情自有天意2
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>5</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+								</ul>
+								<ul class="movie_moreMsgList clearfix" style="display:block">
+									<li class="active">
+										<div class="movie_rankone">
+											<b>1</b>箭在弦上3
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>1</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li >
+										<div class="movie_rankone">
+											<b>2</b>恋了爱了3
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>2</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>3</b>娘要嫁人3
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>3</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>4</b>爱情自有天意3
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>4</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>5</b>爱情自有天意3
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>5</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+								</ul>
+								<ul class="movie_moreMsgList clearfix" style="display:block">
+									<li class="active">
+										<div class="movie_rankone">
+											<b>1</b>箭在弦上4
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>1</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>2</b>恋了爱了4
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>2</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>3</b>娘要嫁人4
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>3</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>4</b>爱情自有天意4
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>4</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+									<li>
+										<div class="movie_rankone">
+											<b>5</b>爱情自有天意4
+											<a href="###">
+												播放
+											</a>
+										</div>
+										<div class="movie_rankActive clearfix">
+											<img src="images/movie_rank_eg.png">
+											<dl>
+	                                            <dt><b>5</b> 恋了爱了</dt>
+	                                            <dd class="summary">故事讲述了女青年沈美溪由于家庭贫寒，未能如期进入... </dd>
+	                                            <dd class="playBtn">点击播放</dd>
+	                                        </dl>
+										</div>
+									</li>
+								</ul>		
+							</div>
+						</div>
+						<!-- 第五组播放历史开始 -->
+						<div class="movie_moreMsg" id="movie_more5">
+							<div class="movie_moreMsgColumn">
+								<ol>
+									<li class="active">播放历史</li>
+									<li>我的收藏</li>
+								</ol>
+								<span>-</span>
+							</div>
+							<div id="movie_moreList1">
+								<ul class="movie_moreMsgList" style="display:block">
+									<li class="historyList clearfix">
+										<a href="###">千山外水总是情</a>
+										<span calss="time">13:14</span>
+									</li>
+									<li class="historyList clearfix">
+										<a href="###">楚汉争霸-再爆片花</a>
+										<span class="play">play</span>
+									</li>
+									<li class="historyList clearfix">
+										<a href="###">箭在弦上-03预告片</a>
+										<span class="play">play</span>
+									</li>
+									<li class="historyList clearfix">
+										<a href="###">千山外水总是情</a>
+										<span class="time">--:--</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 右侧电影详情 -->
+			<div id="content">
+				<div class="rollBox" id="bar_box2">
+					<div class="rollBarUp"></div>
+					<div class="rollBar" id="roll_bar2"></div>
+					<div class="rollBarDown"></div>
+				</div>
+				<div id='content_main'>
+					<div class="con_header"></div>
+					<div id="con_scroll"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer"></div>
+	</div>
+	<script src="js/index.js"></script>
+	<script src="js/move.js"></script>
+	<script src="js/tab.js"></script>
+	<script src="js/wheel.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			var oUser=document.getElementById('user');
+			var aUser=oUser.getElementsByTagName('a');
+			for(var i=0;i<aUser.length;i++){
+				changeColor(aUser[i]);
+			}
+			var oMovie1=document.getElementById('movie_more1');
+			var aMovieUl1=oMovie1.children;
+			for(var j=0;j<aMovieUl1.length;j++){
+				var aMovie1=aMovieUl1[j].getElementsByTagName('a');
+				for(var i=0;i<aMovie1.length;i++){
+					changeColor(aMovie1[i]);
+				}
+			}
+			
+			var oMovie2=document.getElementById('movie_more2');
+			var aMovieUl2=oMovie2.children;
+			for(var j=0;j<aMovieUl2.length;j++){
+				var aMovie2=aMovieUl2[j].getElementsByTagName('a');
+				for(var i=0;i<aMovie2.length;i++){
+					changeColor(aMovie2[i]);
+				}
+			}
+			
+			var aUl1=oMovie1.getElementsByTagName('ul');
+			var oOl1=oMovie1.getElementsByTagName('ol')[0];
+			var aBtn1=oOl1.getElementsByTagName('li');
+			autoTab(oMovie1,aBtn1,aUl1);
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+			var aUl2=oMovie2.getElementsByTagName('ul');
+			var oOl2=oMovie2.getElementsByTagName('ol')[0];
+			var aBtn2=oOl2.getElementsByTagName('li');
+			autoTab(oMovie2,aBtn2,aUl2);
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+			var oMovie3=document.getElementById('movie_more3');
+			var aUl3=oMovie3.getElementsByTagName('ul');
+			var oOl3=oMovie3.getElementsByTagName('ol')[0];
+			var aBtn3=oOl3.getElementsByTagName('li');
+			autoTab(oMovie3,aBtn3,aUl3);
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+			//获取左侧滚动条的元素
+			var oCbox=document.getElementById('column_box');
+			var oBar_box=document.getElementById('bar_box');
+			var oBar=document.getElementById('roll_bar');
+			var oBarD=oBar_box.children[2];
+			var oMovie_box=document.getElementById('movie_box');
+			var oldT=oBar.offsetTop;
+			var oldB=oBarD.offsetTop-oBar.offsetHeight;
+			oMovie_box.position='absolute';
+			oMovie_box.style.top=oMovie_box.offsetTop+'px';
+			oMovie_box.style.left=oMovie_box.offsetLeft+'px';
+			oBar.onmousedown=function(ev){
+				var oEvent=ev||event;
+				var disY=oEvent.clientY-oBar.offsetTop;
+				document.onmousemove=function(ev){
+					var oEvent=ev||event;
+					var t=oEvent.clientY-disY;
+					tab(t);
+				};
+				document.onmouseup=function(){
+					document.onmousemove=null;
+					document.onmouseup=null;
+					oBar.releaseCapture&&oBar.releaseCapture();
+				};
+				oBar.setCapture&&oBar.setCapture();
+				return false;
+			};
+			function tab(t){
+				if(t<oldT){
+					t=oldT;
+				}
+				if(t>oldB){
+					t=oldB;
+				}
+				console.log(t);
+				oBar.style.top=t+'px';
+				var scale=-t/(oBar_box.offsetHeight-oBar.offsetHeight);
+				console.log(t,scale,oMovie_box.style.top);
+				oMovie_box.style.top=scale*(oMovie_box.offsetHeight-oCbox.offsetHeight)+'px';
+			}
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+			addWheel(oCbox,function(bDown){
+				var t = oBar.offsetTop;
+				if(bDown){
+					t+=10;
+				}else{
+					t-=10;
+				}
+				tab(t);
+			});
+			//视频库部分
+			var oVideoGallery=document.getElementById('videoGallery');
+			var aVideoUl=oVideoGallery.getElementsByTagName('ul');
+			for(var j=0;j<aVideoUl.length;j++){
+				showHide(aVideoUl[j]);
+			}
+			
+			function showHide(obj){
+				var aLi=obj.getElementsByTagName('li');
+				for(var i=0;i<aLi.length;i++){
+					//console.log(aLi[i]);
+					aLi[i].onmouseover=function(){
+						for(var i=0;i<aLi.length;i++){
+							aLi[i].className='';
+						}
+						this.className='active';
+					}
+				}
+			}
+			
+			//播放历史部分
+			var oMovie4=document.getElementById('movie_more4');
+			var aUl4=oMovie4.getElementsByTagName('ul');
+			var oOl4=oMovie4.getElementsByTagName('ol')[0];
+			var aBtn4=oOl4.getElementsByTagName('li');
+			autoTab(oMovie4,aBtn4,aUl4);
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/September-9/playObject">Playobject</a> is maintained by <a href="https://github.com/September-9">September-9</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
+		};
+	</script>
+</body>
 </html>
