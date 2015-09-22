@@ -1,0 +1,386 @@
+*{margin: 0;padding:0; list-style:none;}
+.playBox{
+	background: #353537;
+}
+.header{
+	width:1024px;
+	margin:0 auto;
+}
+#main{
+	width:1024px;
+	margin:0 auto;
+	overflow: hidden;
+	background:#272727;
+}
+#slider{
+	width:236px;
+	float:left;
+	border:1px solid #000;
+}
+#slider .user_search{
+	width:234px;
+	height:120px;
+}
+.user_search .search{
+	width: 234px;
+	height:32px;
+	background: url(../images/search_bg.png) no-repeat;
+}
+.user_search .inser{
+	width:200px;
+	margin-left:6px;
+	margin-top:6px;
+	color: #8C8C8C;
+	background: #191917;
+	border:none;
+}
+.user_search .inBtn{
+	background: none;
+	border:none;
+}
+.user .user_title{
+	list-style: none;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	overflow: hidden;
+}
+.user .user_title li{
+	float:left;
+	background: url(../images/userTitle_libg.png) repeat-x;
+	padding:0 6px;
+	color:#ccc;
+	border-right:1px solid #000;
+}
+.user .user_title li.on a{
+	color:#FBB901;
+}
+.user_con{
+	width:234px;
+	height:70px;
+	border:1px solid #000;
+}
+.user_con .user_face{
+	width:68px;
+	margin-top:10px;
+	text-align: center;
+	float:left;
+}
+.user_con .user_msg{
+	margin-top:10px;
+	float:left;
+}
+.user_con .user_msg h3{
+	color: #ff6600;
+}
+.user_con .user_msg .doudou{
+	width:19px;
+	height:13px;
+	display: inline-block;
+	background: url(../images/user_doudou.png) no-repeat;
+}
+.user_level{
+	height:20px;
+	line-height: 20px;
+}
+.user_level span{
+	padding-left:18px;
+	display: inline-block;
+	height:20px;
+	line-height: 20px;
+}
+.user_level span.lv0{
+	padding: 0;
+}
+.user_level span.lv0 img{
+	margin-top:5px;
+}
+.user_level .level_sun{
+	background: url(../images/level_sun.png) no-repeat left bottom;
+}
+.user_level .level_yue{
+	background: url(../images/level_yue.png) no-repeat left bottom;
+}
+.user_level .level_xing{
+	background: url(../images/level_xing.png) no-repeat left bottom;
+}
+.user_help .mycoin a{
+	color: #ce6c0b;
+}
+.user_help .mychange a{
+	color:#ccc;
+}
+.user_help .mychange a:hover{
+	color:#E73D39;
+}
+.column{
+	width:234px;
+	height:693px;
+	margin-top:4px;
+	position:relative;
+}
+.column .rollBox{
+	width:15px;
+	height:100%;
+	background: #000;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.rollBox .rollBar{
+	width:13px;
+	height:50%;
+	background: #403E3F;
+	position:absolute;
+	left:1px;
+	top:13px;
+}
+.rollBox .rollBarUp{
+	width:13px;
+	height:11px;
+	position: absolute;
+	top:0;
+	left:1px;
+	background: url(../images/rollBarUp_bg.png) no-repeat;
+}
+.rollBox .rollBarDown{
+	width:13px;
+	height:11px;
+	position: absolute;
+	bottom:0;
+	left:1px;
+	background: url(../images/rollBarDown_bg.png) no-repeat;
+}
+
+.movie_column .new_game{
+	width:220px;
+	height:20px;
+	line-height: 20px;
+}
+.movie_column .new_game h3{
+	color:#fcba04;
+	background: url(../images/icons/icons01.png) no-repeat 5px top;
+	padding-left:25px;
+}
+.movie_column .new_game h3 span{
+	display: inline-block;
+	float:right;
+	margin-right:10px;
+}
+.movie_moreMsgColumn{
+	width:215px;
+	height:22px;
+	background:#3e3c3d;
+	padding-left: 5px;
+	overflow: hidden;
+}
+.movie_moreMsgColumn ol li{
+	float:left;
+	height:22px;
+	line-height: 22px;
+	padding:0 5px;
+	margin-top:1px;
+	cursor: pointer;
+}
+.movie_moreMsgColumn ol li.active{
+	background: #1E1E1E;
+}
+.movie_moreMsgColumn span{
+	float:right;
+	height:22px;
+	line-height: 22px;
+	margin-right: 10px;
+	color:#fff;
+}
+.movie_moreMsgList{
+	width:220px;
+	display: none;
+}
+.movie_moreMsgList li{
+	width:210px;
+	height:24px;
+	line-height:24px;
+	padding-left: 10px;
+	background: #1E1E1E;
+}
+.movie_moreMsgList .odd{
+	background: #2B2B2B;
+}
+.movie_moreMsgList li a{
+	float:right;
+	margin-right: 10px;
+	color:#ccc;
+}
+.movie_moreMsgList li span b{
+	color:#0AA804;
+}
+.movie_moreMsgColumn h3{
+	display: inline-block;
+	color:#ffb900;
+	float:left;
+	width:39px;
+	height:24px;
+	line-height:24px;
+}
+.movie_tb{
+	width:210px;
+	height:20px;
+	padding-left: 10px;
+}
+.movie_tb h3{
+	height:20px;
+	color:#E06601;
+	line-height:20px;
+}
+.movie_tb h3 span{
+	display: inline-block;
+	width:20px;
+	height: 20px;
+	line-height: 20px;
+	background: url(../images/movie_tongbuBg.png) no-repeat;
+	float:right;
+	margin-right: 10px;
+}
+.movie_moreMsgList li span .yellow{
+	color:yellow;
+	font-size: 14px;
+}
+#videoGallery .movie_moreMsgList li{
+	padding: 0;
+	width:220px;
+	clear:both;
+}
+li .movie_rankone{
+	width:210px;
+	height:23px;
+	line-height:23px;
+	border-bottom:1px solid #17090C;
+	padding-left:10px;
+}
+li.active .movie_rankone{
+	display:none;
+}
+
+#videoGallery .movie_moreMsgList .movie_rankone b{
+	display: inline-block;
+	width:14px;
+	height:15px;
+	text-align: center;
+	color:#fff;
+	line-height:15px;
+	font-weight: bold;
+	background: url(../images/movie_rankListBg.png) no-repeat;
+	margin-right: 4px;
+}
+#videoGallery .movie_moreMsgList li .movie_rankActive{
+	height:114px;
+	background: #1E1E1E;
+	/*overflow: hidden;*/
+	display: none;
+}
+#videoGallery .movie_moreMsgList li.active .movie_rankActive{
+	display:block;
+}
+
+#videoGallery .movie_moreMsgList li .movie_rankActive img{
+	width:77px;
+	float:left;
+	padding:8px;
+}
+#videoGallery .movie_moreMsgList li .movie_rankActive dl{
+	width:120px;
+	float:left;
+}
+.movie_rankActive dl b{
+	display: inline-block;
+	width:14px;
+	height:15px;
+	text-align: center;
+	color:#fff;
+	line-height:15px;
+	font-weight: bold;
+	background: url(../images/movie_rankListBg.png) no-repeat;
+	margin-right: 2px;
+}
+
+.movie_rankActive dl dd.summary{
+	line-height: 20px;
+}
+.movie_rankActive dl dd.playBtn{
+	width:58px;
+	height:18px;
+	float:right;
+	background: url(../images/play_btnBg.png) repeat-x;
+	text-align: center;
+	color:#fff;
+}
+.movie_moreMsgList li.historyList{
+	background: #020A15;
+}
+.movie_moreMsgList li.historyList span{
+	display: inline-block;
+	float:right;
+}
+.movie_moreMsgList li.historyList span.play{
+	background: url(../images/icons/play_historyTrue.png) no-repeat right bottom;
+	width:16px;
+	height:15px;
+	text-indent: -9999px;
+}
+.movie_moreMsgList li.historyList a{
+	background: url(../images/icons/play_historyBg.png) no-repeat 5px 7px;
+	display: inline-block;
+	float:left;
+	padding-left: 15px;
+	height:20px;
+	line-height:20px;
+}
+
+#content{
+	width:786px;
+	float:right;
+	height:820px;
+	background: #282828;
+	overflow: hidden;
+}
+#content .rollBox{
+	width:18px;
+	height:100%;
+	background:#000;
+	float:right;
+	position: relative;
+	top:0;
+	right:2px;
+}
+#content .rollBox .rollBarUp{
+	width:16px;
+	height:16px;
+	background: url(../images/icons/con_barUp.png) no-repeat;
+	position: absolute;
+	top:1px;
+	right:1px;
+}
+#content .rollBox .rollBarDown{
+	width:16px;
+	height:16px;
+	background: url(../images/icons/con_barDown.png) no-repeat;
+	position: absolute;
+	bottom:1px;
+	right:1px;
+}
+#content .rollBox .rollBar{
+	width:16px;
+	height:100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: absolute;
+	/*top:18px;
+	right:1px;*/
+}
+#content_main{
+	width:100%;
+}
+#content_main .con_header{
+	width:100%;
+	height:38px;
+	line-height:38px;
+}
